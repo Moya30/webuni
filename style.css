@@ -1,0 +1,489 @@
+
+  /* GRID CSS ↓↓ */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 2em;
+    background-color:#222;
+    color:#333;
+    padding:1em;
+  }
+  
+  #cuadricula {
+    display: grid;
+    grid-template-columns:450px 1fr 450px;
+    grid-template-rows:max-content max-content;
+    grid-gap:1em;
+  }
+  
+  li{white-space: nowrap;}
+  
+  .item {
+    padding:1em;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #3E989B;
+    background-color: var(--color);
+  }
+  
+  h4{font-size:120%; }
+  code{font-family:monospace; font-size:1.25em; color:black;}
+
+  /* GRID CSS ↑ ↑ */
+
+    /* PONER TU CODIGO AQUI ↓  COMENTADO */
+
+    body{
+        background:#323446 ;
+    }
+    /*SUGERENCIAS*/
+    
+    .Sugeren{
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+   
+    /*Buscador de contenido*/
+    
+    #ctn-bars-search{
+        padding: auto;
+        z-index: 9;
+        transition: all 600ms;
+    }
+    
+    #ctn-bars-search input{
+        display: block;
+        width: 100%;
+        margin: auto;
+        font-size: 18px;
+        outline: 0;
+        border-radius: 25px;
+    }
+    
+    #box-search{
+        position: fixed;
+        top: 16vh;
+        left: 17vh;
+        padding: 0;
+        transform: translateX(-50%);
+        width: 180px;
+        background: #fff;
+        z-index: 8;
+        overflow: hidden;
+        display: none;
+    }
+    
+    
+    #box-search li{
+        list-style: none;
+        margin: auto;
+    }
+    
+    #box-search li a{
+        display: block;
+        margin: 0;
+        width: 140px;
+        color: #777777;
+        padding: 12px 20px;
+        text-decoration: none;
+    }
+    
+    #box-search li a:hover{
+        background: #f3f3f3;
+    }
+    
+    #box-search li a i{
+        margin-right: 10px;
+        color: #777777;
+    }
+    
+    
+    #cover-ctn-search{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 7;
+        display: none;
+    }
+    
+    .sugerencias #alumno{
+        font-size: 20px;
+        white-space: pre; 
+        text-align: center; 
+        background-color:#0089FF;
+        border-radius:10px;
+        margin: 10px; 
+        color:white;
+    }
+    
+    
+    
+    
+    
+    
+    /*PERFIL*/
+    .cuadro-Perfil{
+        
+        background: #477FDD;
+        color: white;
+        position: absolute;
+        height: 50px;
+        width: 300px;
+        margin: 10px;
+        
+        border-radius: 1em;
+        font-size: 10.5px;
+    
+        left: 1210px;
+        top: 10px;
+    }
+    
+    .nomb{
+        display: inline-block;
+        margin: 10px 10px 10px  0;
+    }
+    
+    
+    .foto{
+        float: left;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+        width: 40px;
+    
+    }
+    .Perfil{
+        border-radius: 5em;
+        height: 40px;
+        width: 40px;
+        padding: 5px 5px;
+    }
+    
+    /* SECCIÓN DE ACTIVOS*/
+    
+    .cuadro-Activos{
+        color: #909090;
+        background: #FFFFFF;
+        position: relative;
+        margin: 10px;
+       
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 1em;
+        height: 550px;
+        width: 300px;
+    
+        left: 1210px;
+        
+    
+    }
+    
+    /*Activos*/
+    .cuadro-Activos__conect{
+    
+        /*FONDO TRANSPARENTE*/
+        background: rgb(0, 0, 0) transparent;
+        color: black;
+        position: relative;
+        height: 200px;
+        width: 260px;
+        
+    
+        margin-top: -200px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    
+    
+      
+        
+        border-radius: 2em;
+        font-size: 10.5px;
+    
+    }
+    
+    .cuadro-Activos_Perfiles{
+    
+        margin-right: 10px;
+        margin-left: 10px;
+    
+        position: relative;
+        top: 10px;
+    
+        height: 170px;
+        width: 220px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border-radius: 2em;
+    }
+    
+    /*Anuncio*/
+    
+    .cuadro-Activos__Anuncio{
+        color: #909090;
+        background: #FFFFFF;
+        position: relative;
+        top: 40px;
+    
+        height: 270px;
+        width: 260px;
+    
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        
+    }
+    .cuadro-Activos__Anuncio-img{
+        
+        
+        height: 230px;
+        width: 240px;
+        margin: 10px;
+        border-radius: 1.5em;
+    }
+                                              
+    .cuadro-Activos__titulo{
+        color: #909090;
+        font-size: 18.5px;
+        
+    }
+    .Anuncio{
+        position: relative;
+        height: 250px;
+        width: 260px;
+    
+    }
+    
+    /*PERFILES DE ACTIVOS*/
+    .Perfil-1{
+        
+        position: relative;
+        height: 50px;
+        width: 220px;
+        margin: 10px 10px 10px  0;
+    }
+    
+    .p1{
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        top:-33px;
+        left:50px;
+    }
+    
+    
+    
+    .Perfil-2{
+        
+        position: relative;
+        height: 50px;
+        width: 220px;
+        margin: 10px 10px 10px  0;
+    }
+    
+    .p2{
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        top:-33px;
+        left:50px;
+    }
+    
+    .Perfil-3{
+        
+        
+        position: relative;
+        height: 50px;
+        width: 220px;
+        margin: 10px 10px 10px  0;
+    }
+    
+    .p3{
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        top:-33px;
+        left:50px;
+    }
+    
+    .Perfil-4{
+        
+        
+        position: relative;
+        height: 50px;
+        width: 220px;
+        margin: 10px 10px 10px  0;
+    }
+    .p4{
+        display: inline-block;
+        position: relative;
+        width: 220px;
+        top:-33px;
+        left:50px;
+    }
+    
+    /* Freddy */
+    
+      .aa{
+        margin: 10px;
+        width: 35px;
+        height: 30px;
+       
+        
+      }
+      #logo {
+        width: 100%;
+        max-height: 170px;
+      }
+      
+      .img{
+        float:left; 
+       
+        margin: 7px ;
+        border-radius: 23px;
+          
+      }
+      .position-text .span{
+       
+        font-size: 12px;
+        float: left;
+      }
+      
+      .info-cont {
+        /* se ajusta al ancho del contenedor */
+        width: 100%;
+        height: 46px;
+        background-color: white;
+        /* texto centrado */
+       
+        font: 22px helvetica, sans-serif;
+        font-weight: bold;
+      
+        /* line-heigt para que quede centrado en lo alto */
+       
+           
+        /* transparencia y opacidad */
+        color: black;
+        opacity: 0.8;
+        /* bordes */
+      
+        border-radius: 23px;
+        /* otra forma de bordes 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 40px;*/
+        /* sombras */
+      
+        margin-bottom: 5px;
+      }
+      
+      .noti {
+        margin-bottom: 8px;
+      }
+      .blanco {
+        color: white;
+      }
+      
+      .info-cont2 {
+        width: 100%;
+        height: 46px;
+        background-color: white;
+        /* texto centrado */
+       
+        font: 22px helvetica, sans-serif;
+        font-weight: bold;
+      
+        /* line-heigt para que quede centrado en lo alto */
+       
+           
+        /* transparencia y opacidad */
+        color: black;
+        opacity: 0.8;
+        /* bordes */
+      
+        border-radius: 23px;
+        /* otra forma de bordes 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 40px;*/
+        /* sombras */
+      
+        margin-bottom: 5px;
+      }
+      
+      .caja1 {
+        /* se ajusta al ancho del contenedor */
+        width: auto;
+        height: 280px;
+        background-color: white;
+        /* texto centrado */
+        text-align: center;
+        font: 22px helvetica, sans-serif;
+        font-weight: bold;
+        line-height: 50px;
+        /* line-heigt para que quede centrado en lo alto */
+      
+        /* transparencia y opacidad */
+        color: black;
+      
+        /* bordes */
+      
+        border-radius: 23px;
+      
+       margin: 16px;
+        
+      
+      }
+      
+      .caja1 .contenido{
+        text-align: left;
+        margin: 16px;
+      }
+      
+      .caja2 .contenido2{
+        text-align: left;
+        margin: 16px;
+      }
+      
+      .caja2 {
+        /* se ajusta al ancho del contenedor */
+        width: auto;
+        height: 270px;
+        background-color: white;
+        /* texto centrado */
+        text-align: center;
+        font: 22px helvetica, sans-serif;
+        font-weight: bold;
+        
+        /* line-heigt para que quede centrado en lo alto */
+      
+        /* transparencia y opacidad */
+        color: black;
+      
+        /* bordes */
+      
+        border-radius: 23px;
+      
+       margin: 16px;
+        
+      
+      }
+      
+      .actions-cont {
+        width: 100%;
+        background-color: green;
+      }
+      .score-cont {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        left: 0;
+        right: 0;
+        background-color: blue;
+      }
+    /* Freddy */  
